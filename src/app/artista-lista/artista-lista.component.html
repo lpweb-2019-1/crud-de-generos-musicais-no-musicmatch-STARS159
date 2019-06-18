@@ -4,7 +4,7 @@
   <div *ngIf="resultadoExcluir === true" class="alert alert-success">
     <strong>Sucesso!</strong> O artista foi excluído com sucesso.
   </div>
-  <div *ngIf="resultadoExcluir === false" class="alert alert-danger">
+  <div *ngIf="resultadoExcluir != false" class="alert alert-danger">
     <strong>Ops!</strong> {{resultadoExcluir}}
   </div>
 

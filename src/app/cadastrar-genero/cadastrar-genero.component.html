@@ -1,7 +1,7 @@
 <section>
   <div class="mt-5 mb-5">
-    <h1 class=" border-bottom">Cadastrar artista</h1>
-    <p class="small text-muted">Utilize o formulário a seguir para cadastrar um artista.</p>
+    <h1 class=" border-bottom">Cadastrar genero</h1>
+    <p class="small text-muted">Utilize o formulário a seguir para cadastrar um genero.</p>
   </div>
 
   <form #cadastro="ngForm" (submit)="salvar()">
@@ -17,7 +17,7 @@
         [class.is-invalid]="validacao$.campoInvalido(campo_nome) || validacao$.temErro('nome')" #campo_nome="ngModel">
       <div *ngIf="validacao$.campoInvalido(campo_nome) || validacao$.temErro('nome')" class="invalid-feedback">
         <span *ngIf="campo_nome.errors.required">
-          Por favor, informe o nome do artista.
+          Por favor, informe o nome do genero.
         </span>
         <span *ngIf="validacao$.temErro('nome')">
           {{textoErro('nome')}}
